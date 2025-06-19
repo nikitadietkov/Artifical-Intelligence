@@ -3,6 +3,8 @@ $(document).ready(function () {
         $('.phoneNavigation').toggleClass('openNav');
     });
     $(document).on('click', '.phoneNavigation', function () {
-        $('.phoneNavigation').toggleClass('openNav');
+        $('.phoneNavigation').animate({ transform: 'translateX(-100%)' }, 600, function () {
+            $('.phoneNavigation').toggleClass('openNav');
+        });
     });
 });

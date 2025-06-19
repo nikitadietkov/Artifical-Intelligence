@@ -69,14 +69,14 @@ nav .navigation,
     display: flex;
     gap: 40px;
 }
-nav .navigation a,
-.phoneNavigation .navigation a {
+nav .navigation p,
+.phoneNavigation .navigation p {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
 }
-nav .navigation a::after,
-.phoneNavigation .navigation a::after {
+nav .navigation p::after,
+.phoneNavigation .navigation p::after {
     position: relative;
     content: '';
     display: block;
@@ -87,8 +87,8 @@ nav .navigation a::after,
     background-color: aliceblue;
     transition: .3s ease-in-out;
 }
-nav .navigation a:hover::after,
-.phoneNavigation .navigation a:hover::after {
+nav .navigation p:hover::after,
+.phoneNavigation .navigation p:hover::after {
     width: 100%;
     opacity: 1;
     background-color: aliceblue;
