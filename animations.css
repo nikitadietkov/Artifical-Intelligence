@@ -1,3 +1,25 @@
+@keyframes dropDownNav {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-5px);
+    }
+}
+@keyframes dropDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @keyframes lagging {
     0% {
         opacity: 1;
@@ -123,5 +145,39 @@
         opacity: 0.7;
         transform: translate(1px, -1px);
         filter: blur(0.5px);
+    }
+}
+
+@keyframes flying {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    15% {
+        transform: translate(1px, -1px);
+    }
+
+    30% {
+        transform: translate(2px, 1px);
+    }
+
+    45% {
+        transform: translate(2px, -1px);
+    }
+
+    60% {
+        transform: translate(1px, 0px);
+    }
+
+    75% {
+        transform: translate(2px, -1px);
+    }
+
+    90% {
+        transform: translate(1px, 1px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
     }
 }
