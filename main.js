@@ -18,12 +18,7 @@ function showAndHide(triggerSelector, targetSelector, klass) {
             $(targetSelector).hide(0)
         });
     });
-    $(document).on('click', `${targetSelector} p`, function () {
-        $(targetSelector).animate({ opacity: 0 }, 300, function () {
-            $(targetSelector).hide(0)
-        });
-    });
-    $(document).on('click', `${targetSelector} button`, function () {
+    $(document).on('click', `${targetSelector} p, ${targetSelector} button`, function () {
         $(targetSelector).animate({ opacity: 0 }, 300, function () {
             $(targetSelector).hide(0)
         });
