@@ -132,6 +132,7 @@ header {
 
 header main {
     position: relative;
+    top: 10%;
     left: 20%;
     max-width: 31%;
 }
@@ -186,20 +187,9 @@ header main button:hover {
     animation: flying .6s 5;
 }
 
+
 header main button svg {
     fill: #fff;
-}
-
-header .sponsors {
-    display: flex;
-    justify-content: center;
-    height: 5%;
-    width: min-content;
-    gap: 5%;
-    margin: 0 auto;
-}
-header .sponsors img {
-    filter: drop-shadow(0 0 1px #000000);
 }
 
 header .video {
@@ -213,7 +203,7 @@ header .video {
     border-radius: 20px;
     background-color: #000000;
     box-shadow: 0 0 0 100vw #0000005e;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: opacity .3s;
     opacity: 0;
 }
 header .video iframe {
@@ -223,4 +213,6 @@ header .video iframe {
 }
 .videoShow {
     display: block !important;
+    opacity: 1 !important;
+    transition: opacity .3s;
 }
