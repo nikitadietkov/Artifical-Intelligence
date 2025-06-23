@@ -149,4 +149,36 @@
     .splide ul li.splide__slide h6{
         font-size: 17px;
     }
+
+    .reviews {
+        height: 100vh;
+        background-size: 90%;
+        background-position: 80% 0;
+    }
+
+    .reviews main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        padding: 1%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .reviews main h2 {
+        color: #fff;
+        font-size: 30px;
+        padding-bottom: 20px;
+        text-shadow: 0 0 5px #020914;
+    }
+
+    .reviews main p {
+        margin: 0 auto;
+        font-size: 18px;
+        font-weight: 400;
+        padding-bottom: 10px;
+        text-shadow: 0 0 3px #000000;
+    }
 }
