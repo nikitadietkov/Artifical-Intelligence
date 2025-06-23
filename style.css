@@ -256,7 +256,13 @@ header .video iframe {
     max-width: 30vw;
 
     border-radius: 10px;
+    box-shadow: 0 0 2px #3a68b800;
+    transition: .2s ease-in-out;
     background: linear-gradient(to bottom, rgba(255,255,255,0.05), rgba(255,255,255,0.1));
+}
+.splide ul li.splide__slide:hover {
+    box-shadow: 0 0 2px #3A68B8 ;
+    transform: scale(1.02);
 }
 .splide ul li img {
     width: 100px;
