@@ -118,21 +118,20 @@ nav .navigation p:hover::after,
 }
 
 header {
+    
     height: 100vh;
-    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255, 255, 255, 0.05));
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-image: url('img/back-header.png');
-    background-size: 35%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.05)), url('img/back-header.png');
+    background-size: 200vw, 35%;
     background-repeat: no-repeat;
-    background-position: 90% 50%;
+    background-position: center, 90% 50%;
     animation: dropDown .6s ease-in-out;
 }
 
 header main {
     position: relative;
-    top: 10%;
     left: 20%;
     max-width: 31%;
 }
@@ -143,13 +142,15 @@ header main h6 {
     padding-bottom: 10px;
 }
 
-header main h1 {
+header main h1,
+.dataInnovation h1 {
     color: #fff;
     font-size: 55px;
     padding-bottom: 40px;
 }
 
-header main p {
+header main p,
+.dataInnovation p {
     color: #fff;
     font-size: 18px;
     padding-bottom: 50px;
@@ -160,7 +161,8 @@ header main .buttons {
     gap: 1em;
 }
 
-header main button {
+header main button,
+.dataInnovation button {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -172,10 +174,11 @@ header main button {
     border: none;
     outline: none;
     border-radius: 5px;
-    transition: .4s ease-in-out;
+    transition: .2s ease-in-out;
     background-color: #3A68B8;
 }
-header main button:hover {
+header main button:hover,
+.dataInnovation main button:hover {
     color: #3A68B8;
     background-color: #fff;
 }
@@ -215,4 +218,65 @@ header .video iframe {
     display: block !important;
     opacity: 1 !important;
     transition: opacity .3s;
+}
+
+.dataInnovation {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(img/back-dataInnovation.png);
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: 20% 40%;
+
+}
+.dataInnovation main {
+    max-width: 35%;
+
+    position: relative;
+    right: -55vw;
+}
+.dataInnovation main h1 {
+    font-size: 40px;
+}
+.dataInnovation main p {
+    font-size: 16px;
+    font-weight: 100;
+    max-width: 80%;
+}
+
+.splide ul li.splide__slide {
+    display: grid;
+    grid-template-rows: 2fr 1fr max-content;
+    justify-items: center;
+    text-align: center;
+    
+    margin: 2em 1em;
+    padding: 2em 1em;
+    max-width: 30vw;
+
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.05), rgba(255,255,255,0.1));
+}
+.splide ul li img {
+    width: 100px;
+}
+.splide ul li h6 {
+    color: #ffffff;
+    font-size: 20px;
+}
+.splide ul li p {
+    color: #ffffff;
+    font-size: 11px;
+}
+.splide__pagination__page {
+    opacity: .5;
+    background-color: #2C3647;
+}
+.splide__pagination__page.is-active {
+    background-color: #2C3647;
+}
+.splide__arrow {
+    backdrop-filter: blur(10px);
+    background-color: #2C3647;
 }
